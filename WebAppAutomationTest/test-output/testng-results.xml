@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10300" started-at="2016-06-30T13:24:30Z" finished-at="2016-06-30T13:24:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10300" started-at="2016-06-30T13:24:30Z" finished-at="2016-06-30T13:24:41Z">
+      <class name="com.automation.test.CreateCustomer">
+        <test-method status="PASS" signature="loadTestDataAndLaunchBrowser()[pri:0, instance:com.automation.test.CreateCustomer@63d4e2ba]" name="loadTestDataAndLaunchBrowser" is-config="true" duration-ms="4107" started-at="2016-06-30T18:54:30Z" finished-at="2016-06-30T18:54:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadTestDataAndLaunchBrowser -->
+        <test-method status="PASS" signature="login()[pri:1, instance:com.automation.test.CreateCustomer@63d4e2ba]" name="login" duration-ms="2839" started-at="2016-06-30T18:54:34Z" finished-at="2016-06-30T18:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="creatCustomer()[pri:2, instance:com.automation.test.CreateCustomer@63d4e2ba]" name="creatCustomer" duration-ms="2984" started-at="2016-06-30T18:54:37Z" finished-at="2016-06-30T18:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatCustomer -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.test.CreateCustomer@63d4e2ba]" name="tearDown" is-config="true" duration-ms="363" started-at="2016-06-30T18:54:40Z" finished-at="2016-06-30T18:54:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.test.CreateCustomer -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
