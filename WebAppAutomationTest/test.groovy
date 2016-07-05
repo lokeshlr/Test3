@@ -1,4 +1,4 @@
-def jobName_1=%JOB_NAME%
+def jobName_1='Parent1'
 def gitRepoPath='lokeshlr/Test3'
 def gitBranchName='*/master'
 job(jobName_1){
