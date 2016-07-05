@@ -1,8 +1,8 @@
 def jobName_1='Parent3'
 def gitRepoPath='lokeshlr/Test3'
 def gitBranchName='*/master'
-freeStylejob(jobName_1){
-description(jobName_1)
+freeStylejob('Parent3'){
+description('Parent3')
 scm{
      github(gitRepoPath,gitBranchName)
     }
