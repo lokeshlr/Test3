@@ -18,7 +18,7 @@ scm{
         artifactDeployer {
             artifactsToDeploy {
                 includes('**/test-output/index.html')
-                remoteFileLocation('D:\\PennyMac\\Archieve')
+                remoteFileLocation('D:\\PennyMac\\Archieve\\${BUILD_ID}')
                 deleteRemoteArtifacts()
             }
         }
