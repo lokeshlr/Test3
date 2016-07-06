@@ -1,4 +1,4 @@
-def jobName_1='Parent2'
+def jobName_1='Test1'
 def gitRepoPath='lokeshlr/Test3'
 def gitBranchName='*/master'
 freeStyleJob(jobName_1){
