@@ -8,6 +8,7 @@ scm{
     }
   steps{
     batchFile('cd %WORKSPACE%\\WebAppAutomationTest'+'\n'+'test.bat')
+    dsl{external('**/*.groovy')}
   }
   triggers {
         scm('*/5 * * * *')
