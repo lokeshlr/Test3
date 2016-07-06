@@ -17,8 +17,8 @@ scm{
 	publishers {
         artifactDeployer {
             artifactsToDeploy {
-			    baseDir('**/test-output/')
-                includes('index.html')
+	        //baseDir('**/test-output/')
+                includes('**/test-output/index.html')
                 remoteFileLocation('D:\\PennyMac\\Archieve')
                 deleteRemoteArtifacts()
             }
