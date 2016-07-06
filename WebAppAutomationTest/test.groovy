@@ -14,4 +14,14 @@ scm{
         scm('*/5 * * * *')
         githubPush()
     }
+	publishers {
+        artifactDeployer {
+            artifactsToDeploy {
+			    baseDir('**/test-output/')
+                includes('index.html')
+                remoteFileLocation('D:\\PennyMac\\Archieve')
+                deleteRemoteArtifacts()
+            }
+        }
+    }
 }
