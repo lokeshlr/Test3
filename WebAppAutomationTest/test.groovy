@@ -5,7 +5,7 @@ def ARTIFACT_SOURCE_PATH = '**/test-output/index.html'
 def S3_PROFILE_NAME = 'pennymacadmin'
 def S3_BUCKET_NAME = 'pnmac-jenkins-archive'
 def S3_STORAGE_CLASS_NAME = 'STANDARD'
-def S3_STORAGE_REGION = 'eu-west-1'
+def S3_STORAGE_REGION = 'us-east-1'
 
 freeStyleJob(jobName_1){
 description(jobName_1)
