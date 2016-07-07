@@ -1,6 +1,12 @@
-def jobName_1='Test1'
-def gitRepoPath='lokeshlr/Test3'
-def gitBranchName='*/master'
+def jobName_1 = 'Test1'
+def gitRepoPath = 'lokeshlr/Test3'
+def gitBranchName = '*/master'
+def ARTIFACT_SOURCE_PATH = '**/test-output/index.html'
+def S3_PROFILE_NAME = 'pennymacadmin'
+def S3_BUCKET_NAME = 'pnmac-jenkins-archive'
+def S3_STORAGE_CLASS_NAME = 'STANDARD'
+def S3_STORAGE_REGION = 'eu-west-1'
+
 freeStyleJob(jobName_1){
 description(jobName_1)
 scm{
@@ -14,13 +20,13 @@ scm{
         scm('*/5 * * * *')
         githubPush()
     }
-	publishers {
-        artifactDeployer {
-            artifactsToDeploy {
-                includes('**/test-output/index.html')
-                remoteFileLocation('C:\\Users\\lokesh.lr\\Documents\\Pnmac\\Archieve\\BUILD_ID_${BUILD_ID}')
-                deleteRemoteArtifacts()
-            }
-        }
-    }
+	
+  publishers {
+        s3(S3_PROFILE_NAME) {
+            entry(ARTIFACT_SOURCE_PATH, S3_BUCKET_NAME, S3_STORAGE_REGION) {
+                storageClass(S3_STORAGE_CLASS_NAME)
+                noUploadOnFailure()
+                }
+             }
+         }
 }
