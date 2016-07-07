@@ -26,6 +26,7 @@ scm{
             entry(ARTIFACT_SOURCE_PATH, S3_BUCKET_NAME, S3_STORAGE_REGION) {
                 storageClass(S3_STORAGE_CLASS_NAME)
                 noUploadOnFailure()
+                useServerSideEncryption()
                 }
              }
          }
